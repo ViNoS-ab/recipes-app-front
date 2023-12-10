@@ -9,7 +9,9 @@ export const LoginBtn = () => {
     const currentUser = localStorage.getItem("user");
     setUser(currentUser ? JSON.parse(currentUser) : null);
     try {
-      const res = await fetch(process.env.NEXT_PUBLIC_API_URL + "/me");
+        const res = await fetch(process.env.NEXT_PUBLIC_API_URL + "/me", {
+          credentials: "include"
+      });
       const data = await res.json();
       if (data.success) {
         setUser(data.user);
