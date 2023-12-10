@@ -1,0 +1,8 @@
+.dashes {
+    background-image: linear-gradient(to right , black 70% , transparent 30%);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    background-size: 15px 3px;
+
+
+}

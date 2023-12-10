@@ -12,6 +12,9 @@ module.exports = {
         "foodYellow": "#F6C851",
         "foodCrevet": "#F38B50",
         "defaultBg": "#F3E7D8"
+      },
+      backgroundImage: {
+        lemon: "url('/images/home/lemon.png')"
       }
     },
   },
